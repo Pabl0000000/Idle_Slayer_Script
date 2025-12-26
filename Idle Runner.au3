@@ -460,29 +460,29 @@ Func CirclePortals()
 				$sColor = 0xBD4348
 			Case 3
 				;jungle
-				$sColor = 0x00978D
+				$sColor = 0x009D93
 			Case 4
 				;frozen fields
 				$sColor = 0x6FF5F8
 			Case 5
 				;funky
-				$sColor = 0xAC5FBF
+				$sColor = 0xB362C7
 			Case 6
 				;modern city
-				$sColor = 0x000178
+				$sColor = 0x000173
 			Case 7
 				;factory
 				$sColor = 0x00F8B5
 			Case 8
 				;valley
-				$sColor = 0xD892B7
+				$sColor = 0xE198BF
 			Case 9
 				;castle
-				$sColor = 0x4C0081
+				$sColor = 0x4F0085
 		EndSwitch
 		Local $aLocation
 		While 1
-			$aLocation = PixelSearch(470, 230, 470, 540, $sColor)
+			$aLocation = PixelSearch(470, 230, 470, 540, $sColor, 10)
 			If @error Then
 				;Check gray scroll bar is there
 				PixelSearch(875, 536, 875, 536, 0xD6D6D6)
