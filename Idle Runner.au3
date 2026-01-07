@@ -665,6 +665,15 @@ Func ClaimQuests()
 		MouseClick("left", 1073, 174, 1, 0)
 	EndIf
 
+	; weekly Quest 
+	Sleep(500) 
+	PixelSearch(1067, 230, 1067, 230, 0x379D37)
+	If Not @error Then
+		;Click on +2 daily Quest
+		Sleep(500)
+		MouseClick("left", 1067, 230, 1, 0)
+	EndIf
+
 	; Top of scrollbar
 	MouseMove(1254, 272, 0)
 	Do
