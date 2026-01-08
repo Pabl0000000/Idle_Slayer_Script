@@ -1,6 +1,8 @@
 #include-once
 #include "Common.au3"
 
+
+
 Func SellArmory($bArmoryExcVictorState, $bArmoryNonExcellentState , $bArmoryExcellentState)
 
 	; Open Armory and scroll up
@@ -14,7 +16,10 @@ Func SellArmory($bArmoryExcVictorState, $bArmoryNonExcellentState , $bArmoryExce
 	Sleep(500)
 	;Click armory tab
 	MouseClick("left", 359, 694, 1, 0)
-	Sleep(500)
+	Sleep(500)´
+	;Exit Key Items 
+	MouseClick("left", 81, 610, 1, 0)
+	Sleep(500)´
 	;Click for scroll
 	MouseClick("left", 476, 525, 1, 0)
 	Sleep(500)
@@ -69,7 +74,7 @@ Func SellArmory($bArmoryExcVictorState, $bArmoryNonExcellentState , $bArmoryExce
 							PixelSearch(687, 515, 687, 515, 0x51E294)
 							If Not @error Then
 								WriteInLogs("SellArmory Excelent Victor Ring wasn´t sold")
-								
+
 								;Click Cancel DONT SELL 676,580 0xAF0000
 								MouseClick("left", 676,580, 1, 0)
 							EndIf
@@ -85,7 +90,7 @@ Func SellArmory($bArmoryExcVictorState, $bArmoryNonExcellentState , $bArmoryExce
 					Sleep(500)
 					PixelSearch(478,507, 776,530, 0xFFFFFF)
 					If Not @error Then
-						WriteInLogs("SellArmory Not Excelent Item sold")
+						WriteInLogs("SellArmory Not Excelent Item sold")						
 
 						;Click Break 510,578 0x00A400
 						MouseClick("left", 510, 578, 1, 0)
@@ -148,7 +153,7 @@ Func SellArmory($bArmoryExcVictorState, $bArmoryNonExcellentState , $bArmoryExce
 					Sleep(500)
 					PixelSearch(478,507, 776,530, 0x51E294)
 					If Not @error Then
-						WriteInLogs("SellArmory Excelent Item wasn´t sold")
+						WriteInLogs("SellArmory Excelent Item wasn´t sold")	
 
 						;Click Cancel DONT SELL 676,580 0xAF0000
 						MouseClick("left", 676,580, 1, 0)
