@@ -16,10 +16,10 @@ Func SellArmory($bArmoryExcVictorState, $bArmoryNonExcellentState , $bArmoryExce
 	Sleep(500)
 	;Click armory tab
 	MouseClick("left", 359, 694, 1, 0)
-	Sleep(500)´
+	Sleep(500)
 	;Exit Key Items 
 	MouseClick("left", 81, 610, 1, 0)
-	Sleep(500)´
+	Sleep(500)
 	;Click for scroll
 	MouseClick("left", 476, 525, 1, 0)
 	Sleep(500)
